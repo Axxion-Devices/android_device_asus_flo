@@ -22,9 +22,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration 
-$(call inherit-product, vendor/omni/config/common_tablet.mk)
+$(call inherit-product, vendor/axxion/config/common_tablet.mk)
 
-PRODUCT_NAME := omni_flo
+PRODUCT_NAME := axxion_flo
 PRODUCT_DEVICE := flo
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := Nexus 7 2013
@@ -33,7 +33,7 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/asus/flo
-KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(strip $(HOST_OS))-x86/arm/arm-eabi-4.7/bin/"
+KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(strip $(HOST_OS))-x86/arm/arm-eabi-4.9/bin/"
 TARGET_KERNEL_CONFIG := flo_defconfig 
 TARGET_VARIANT_CONFIG := flo_defconfig
 TARGET_SELINUX_CONFIG := flo_defconfig
