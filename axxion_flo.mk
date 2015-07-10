@@ -31,6 +31,7 @@ PRODUCT_MODEL := Nexus 7 2013
 PRODUCT_MANUFACTURER := ASUS
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+TARGET_BOOTANIMATION_SIZE := 1080
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/asus/flo
 KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(strip $(HOST_OS))-x86/arm/arm-eabi-4.9/bin/"
