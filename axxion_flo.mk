@@ -34,7 +34,7 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 TARGET_BOOTANIMATION_SIZE := 1080
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/asus/flo
-KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(strip $(HOST_OS))-x86/arm/arm-eabi-4.9/bin/"
+KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(strip $(HOST_OS))-x86/arm/arm-eabi-4.8/bin/"
 TARGET_KERNEL_CONFIG := flo_defconfig 
 TARGET_VARIANT_CONFIG := flo_defconfig
 TARGET_SELINUX_CONFIG := flo_defconfig
